@@ -1,0 +1,312 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.prod-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+}
+
+main {
+    margin:0;
+    padding:0;
+    height: 2000px;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+h1.zero:before{
+    opacity: 1;
+}
+
+h1:before {
+    content: attr(data-count);
+    color: white;
+    position: absolute;
+    right: 16px;
+    font-size: 15px;
+    text-align: center;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+section {
+    width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+    border: #cb8e8b;
+    border-radius: 30%;
+
+}
+
+section div {
+    width: 20%;
+    height: 93%;
+    padding: 1%;
+    position: relative;
+}
+
+img {
+    width: 200px;
+    height: 186px;
+    align-items: center;
+}
+
+p {
+    margin: 5px;
+}
+
+h6 {
+    width: 50px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+button {
+    background-color: #cb8e8b;
+    color: white;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+section div span {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    width: 200px;
+    height: 186px;
+    display: none;
+}
+
+section div span img {
+    width: 100%;
+    height: 100%;
+}
+
+section div:nth-child(1)>span.active {
+    animation: first 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes first {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(2)>span.active {
+    animation: second 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes second {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(3)>span.active {
+    animation: third 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes third {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(4)>span.active {
+    animation: forth 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes forth {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(5)>span.active {
+    animation: fifth 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes fifth {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(6)>span.active {
+    animation: fifth 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes sixth {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(7)>span.active {
+    animation: seven 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes seven {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(8)>span.active {
+    animation: eight 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes eight {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(9)>span.active {
+    animation: nine 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes nine {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+section div:nth-child(10)>span.active {
+    animation: ten 0.5s ease-in;
+    z-index: 2;
+    display:  block;
+}
+
+@keyframes ten {
+    to {
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+
+.select {
+    width: 60%;
+    height: 600px;
+    padding: 5%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    transition: 0.5s;
+    top: -1000px;
+    overflow-y: auto;;
+    margin: auto;
+}
+
+.select.display {
+    top: 20px;
+}
+
+
+.select div {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-items: center;
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    margin: 5px auto;
+}
+
+.select div img {
+    width: 200px;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.select div p {
+    padding: 35px;
+    width: 60%;
+    color: rgb(0, 0, 0);
+}
+
+.select div h6 {
+    left: 45%;
+    top: 50%;
+    color: rgb(255, 255, 255);
+}
+
+.select div button {
+    left: 45%;
+    height: 50px;
+}
+
+.select div span {
+    display: none;
+}
